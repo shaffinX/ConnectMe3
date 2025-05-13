@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/default_profile"
+        android:background="@drawable/circle_bg"
+        android:clipToOutline="true" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Username"
+        android:textSize="18sp"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/inviteBtn"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="Invite"
+        android:backgroundTint="#5D4426"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button" />
+
+</LinearLayout>

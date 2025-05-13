@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginBottom="10dp">
+
+    <!-- Sender's Message -->
+    <LinearLayout
+        android:id="@+id/sender_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        android:background="@drawable/sender_message_background"
+        android:padding="12dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/sender_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sender's Message"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/sender_message_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Receiver's Message -->
+    <LinearLayout
+        android:id="@+id/receiver_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/receiver_message_background"
+        android:padding="12dp"
+        android:layout_gravity="end"
+        android:layout_marginStart="230dp">
+
+        <TextView
+            android:id="@+id/receiver_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiver's Message"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/receiver_message_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
